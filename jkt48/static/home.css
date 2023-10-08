@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    height: 120px;
+    height: 100px;
 }
 
 .logo .text {
@@ -25,32 +25,55 @@ header {
 }
 
 .logo h1 {
-    font-size: 70px;
+    font-size: 55px;
     margin: 0;
 }
 
 .logo h2 {
-    font-size: 30px;
+    font-size: 23px;
     margin: 0;
 }
 
+.menu {
+    margin-left: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 100px;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .lang-list {
-    align-items: right;
-    margin-right: 200px;
+    align-items: center;
     font-size: 15px;
+    padding: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: 15px ;
+    align-self: flex-start;
+    /* padding-bottom: 25px; */
 }
 
 .lang-list li {
+    margin-left: 10px;
     display: inline;
-    padding: 10px;
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.lang-list li a {
+    color: black;
+    text-decoration: none;
 }
 
 .navbar-list {
     margin: 0;
     align-items: right;
-    margin-right: 200px;
+    /* margin-right: 200px; */
     font-size: 20px;
+    padding-bottom: 0;
     align-self: flex-end;
 }
 
