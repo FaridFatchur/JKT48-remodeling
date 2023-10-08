@@ -34,15 +34,24 @@ header {
     margin: 0;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end;
+.lang-list {
+    align-items: right;
+    margin-right: 200px;
+    font-size: 15px;
+}
+
+.lang-list li {
+    display: inline;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
 
 .navbar-list {
+    margin: 0;
     align-items: right;
     margin-right: 200px;
     font-size: 20px;
+    align-self: flex-end;
 }
 
 .navbar-list li {
