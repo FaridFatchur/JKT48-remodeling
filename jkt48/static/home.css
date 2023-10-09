@@ -38,11 +38,11 @@ header {
     margin-left: auto;
     margin-top: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     margin-right: 100px;
     flex-direction: column;
-    gap: 30px;
+    gap: 0.5rem;
 }
 
 .lang-list {
@@ -86,6 +86,10 @@ header {
 .navbar-list li a {
     color: black;
     text-decoration: none;
+}
+
+.lang-list li a:hover {
+    color: #ED1B24;
 }
 
 .navbar-list li a:hover {
