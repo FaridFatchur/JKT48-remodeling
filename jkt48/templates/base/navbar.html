@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block css-ok %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    {% endblock %}
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a class="logo-link" href="{% url 'home-page' %}">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="Logo JKT48">
+                <div class="text">
+                    <h1>JKT48</h1>
+                    <h2>Official Website</h2>
+                </div>
+            </div>
+        </a>
+        
+        <div class="menu">
+            <ul class="lang-list">
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">INA</a></li>
+                <li><a href="#">JPN</a></li>
+            </ul>
+            <ul class="navbar-list">
+                <li><a href="#">NEWS</a></li>
+                <li><a href="{% url 'members' %}">MEMBER</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">THEATER</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">FANCLUB</a></li>
+            </ul>
+        </div>
+    </header>
+    {% block content %}
+    
+    {% endblock %}
+    <div class="container">
+
+    </div>
+</body>
+</html>

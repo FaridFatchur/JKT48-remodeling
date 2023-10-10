@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% extends "../base/navbar.html" %}
+{% load static %}
 
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="{% static 'img/logo.png' %}" alt="Logo JKT48">
-            <div class="text">
-                <h1>JKT48</h1>
-                <h2>Official Website</h2>
-            </div>
-        </div>
-        
-        <div class="menu">
-            <ul class="lang-list">
-                <li><a href="#">ENG</a></li>
-                <li><a href="#">INA</a></li>
-                <li><a href="#">JPN</a></li>
-            </ul>
-            <ul class="navbar-list">
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">MEMBER</a></li>
-                <li><a href="#">SCHEDULE</a></li>
-                <li><a href="#">THEATER</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">FANCLUB</a></li>
-            </ul>
-        </div>
-    </header>
-    <h1>This is JKT48</h1>
-</body>
-</html>
+    {% block content %}
+    <div class="content">
+        JKT48 is a ...
+    </div>
+    {% endblock %}

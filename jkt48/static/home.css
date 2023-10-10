@@ -12,8 +12,13 @@ header {
     box-shadow: 0 0 5px black;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
+    color: black;
 }
 
 .logo img {
