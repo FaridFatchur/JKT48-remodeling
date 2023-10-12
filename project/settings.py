@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
+    
 ]
 
 MIDDLEWARE = [
@@ -125,9 +127,11 @@ USE_TZ = True
 
 import os
 STATIC_URL = '/static/'
-MEDIA_URL = '/img/'
+MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'jkt48/static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

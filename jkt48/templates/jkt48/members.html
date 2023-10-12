@@ -1,10 +1,101 @@
 {% extends "../base/navbar.html" %}
 {% load static %}
+    {% block css-ok %}
+    <link rel="stylesheet" href="{% static 'member.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    {% endblock %}
 
     {% block content %}
-    <div class="content">
+    <section class="members">
         <div class="top-members">
-            
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
         </div>
-    </div>
+        <div class="all-members">
+			{% for x in allmem %}
+            <div class="member">
+				<img src="{{ x.photo.url }}">
+				<div class="member-info">
+					<h4 class="product-title">
+                        {{ x.stage_name }}
+					</h4>
+					<p class="product-price">
+						Gen {{ x.gen }}
+					</p>
+				</div>
+			</div>
+			{% endfor %}
+            <!-- <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div>
+            <div class="member">
+				<img src="https://jkt48.com/profile/shani_indira_natio.jpg?v=20230116">
+				<div class="member-info">
+					<h4 class="product-title">
+                        Shani
+					</h4>
+					<p class="product-price">3rd Gen</p>
+				</div>
+			</div> -->
+        </div>
+    </section>
+        
     {% endblock %}
